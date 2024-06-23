@@ -16,7 +16,7 @@ int Round_robin(int n,vector<pair<int,int>>&anb,int cpu_time)
     sort(v.begin(), v.end());
     
     queue<pair<int, char>> ready;
-    int time = 0;
+    int time = cpu_time;
     int j = 0;
 
     while (j < n && v[j].first.first <= time)

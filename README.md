@@ -5,6 +5,7 @@
 ## 📃Table of Content :
 -   <a href="#Introduction">Introduction</a>  
 -   <a href="#Objective">Objective</a>  
+-   <a href="#How_to_use">How_to_use</a>  
 -   <a href="#Working-Procedure">Working Procedure</a>
 -   <a href="#Technology">Technology</a>
 -   <a href="#Conclusion">Conclusion</a>
@@ -18,11 +19,13 @@
 algorithms in this investigation. Join us on a journey through the core
 principles where simplicity meets efficacy, and every cycle counts.
 
-
+# <h2 class="Objective">📜How_to_use</h2> 
+1.clone the folder on ypur device 
+2.make sure u have c/c++ compiler
+3.Navigate to main.cpp run the file and enjoy
 
 # <h2 class="Objective">📜Objective</h2> 
-<!-- ## How to use it -->
-
+ 
 1. Goal: Evaluate and contrast CPU scheduling methods, such as FCFS,
 Round Robin, Priority Scheduling, SJF, and LJF, in-depth.
 2. Focus : Examine performance indicators like waiting, response,

@@ -21,7 +21,9 @@ principles where simplicity meets efficacy, and every cycle counts.
 
 # <h2 class="Objective">📜How_to_use</h2> 
 1.clone the folder on ypur device. 
+
 2.make sure u have c/c++ compiler.
+
 3.Navigate to main.cpp run the file and enjoy.
 
 # <h2 class="Objective">📜Objective</h2> 

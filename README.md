@@ -20,9 +20,9 @@ algorithms in this investigation. Join us on a journey through the core
 principles where simplicity meets efficacy, and every cycle counts.
 
 # <h2 class="Objective">📜How_to_use</h2> 
-1.clone the folder on ypur device. 
+1.Clone the folder on your device. 
 
-2.make sure u have c/c++ compiler.
+2.Make sure u have c/c++ compiler.
 
 3.Navigate to main.cpp run the file and enjoy.
 

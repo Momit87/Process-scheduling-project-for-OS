@@ -23,7 +23,7 @@ void arraival_and_burst_time()
     cout << "Enter number of process(Max:26) : ";
 
     cin >> num;
-    cout << "Process:Arraival:Brust" << endl;
+    cout << "Process:Arrival:Brust" << endl;
     for (char c = 'A'; c < 'A' + num; c++)
     {
         cout << c << "=";
@@ -32,7 +32,7 @@ void arraival_and_burst_time()
         anb.push_back({fir, sec});
     }
 }
-void arraival_and_burst_time_priority()
+void arrival_and_burst_time_priority()
 {
     system("cls");
     cout << "*****************************************" << endl;
@@ -44,7 +44,7 @@ void arraival_and_burst_time_priority()
     cout << "Enter number of process(Max:26) : ";
 
     cin >> num;
-    cout << "Process:Arraival:Brust:Priority" << endl;
+    cout << "Process:Arrival:Brust:Priority" << endl;
     for (char c = 'A'; c < 'A' + num; c++)
     {
         cout << c << "=";
@@ -164,7 +164,7 @@ void main_menu()
         }
         else if (choose_algo == 4)
         {
-            arraival_and_burst_time_priority();
+            arrival_and_burst_time_priority();
             system("cls");
 
             int time = priority_scheduling_non_pre(num, anb, priority);
@@ -173,7 +173,7 @@ void main_menu()
         }
         else if (choose_algo == 5)
         {
-            arraival_and_burst_time_priority();
+            arrival_and_burst_time_priority();
             int cpu;
             cout << "Enter Cpu limit : ";
             cin >> cpu;
@@ -247,7 +247,7 @@ void main_menu()
             }
             else if (choose_2 == 4)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
 
                 system("cls");
                 int time1 = FIFO(num, anb);
@@ -256,7 +256,7 @@ void main_menu()
             }
             else if (choose_2 == 5)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -294,7 +294,7 @@ void main_menu()
             }
             else if (choose_2 == 4)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 system("cls");
                 int time1 = SJFS(num, anb);
                 int time2 = priority_scheduling_non_pre(num, anb, priority);
@@ -302,7 +302,7 @@ void main_menu()
             }
             else if (choose_2 == 5)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -331,7 +331,7 @@ void main_menu()
         {
             if (choose_2 == 4)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 system("cls");
                 int time1 = LJFS(num, anb);
                 int time2 = priority_scheduling_non_pre(num, anb, priority);
@@ -339,7 +339,7 @@ void main_menu()
             }
             else if (choose_2 == 5)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -368,7 +368,7 @@ void main_menu()
         {
             if (choose_2 == 5)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -379,7 +379,7 @@ void main_menu()
             }
             else if (choose_2 == 6)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -397,7 +397,7 @@ void main_menu()
         {
             if (choose_2 == 6)
             {
-                arraival_and_burst_time_priority();
+                arrival_and_burst_time_priority();
                 int cpu;
                 cout << "Enter Cpu limit : ";
                 cin >> cpu;
@@ -420,7 +420,7 @@ void main_menu()
     }
     else if (choosen == 3)
     {
-        arraival_and_burst_time_priority();
+        arrival_and_burst_time_priority();
         int cpu;
         cout << "Enter Cpu limit : ";
         cin >> cpu;

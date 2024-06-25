@@ -48,7 +48,7 @@ int Round_robin(int n, vector<pair<int, int>> anb, int cpu_time)
 
     for (j = 0; j < n; j++)
     {
-        time+=min(v[j].first.first,time);
+        time=max(v[j].first.first,time);
         ready.push({v[j].first.second, v[j].second});
 
         j++;

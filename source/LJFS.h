@@ -46,7 +46,7 @@ int LJFS(int n, vector<pair<int, int>> &anb)
     priority_queue<pair<pair<int, int>, char>> pq;
     for (int i = 0; i < n; i++)
     {
-        time += max(time, v[i].first.first);
+        time = max(time, v[i].first.first);
         pq.push({{v[i].first.second, v[i].first.first}, v[i].second});
         i++;
         while (i < n && v[i].first.first <= time)

@@ -33,23 +33,40 @@ int SJFS(int n,vector<pair<int,int>>&anb)
 
     for (int i = 0; i < n; i++)
     {
-       
-        v[i].first.second=anb[i].first;
-        v[i].first.first=anb[i].second;
+
+        v[i].first.first = anb[i].first;
+        v[i].first.second = anb[i].second;
         v[i].second = 'A' + i;
     }
     sort(v.begin(), v.end());
-    //  cout << "----------------Gantt Chart-----------------" << endl;
-    // cout << "Time  : Character " << endl;
-    int time=0;
-    vector<int>tim;
-    vector<char>pro;
-    for(int i=0;i<n;i++){
-        time=max(v[i].first.second,time);
-        time+=v[i].first.first;
-        // cout<<time<<' '<<v[i].second<<endl;
-        tim.push_back(time);
-        pro.push_back(v[i].second);
+
+    int time = 0;
+    vector<int> tim;
+    vector<char> pro;
+    priority_queue<pair<pair<int, int>, char>,vector<pair<pair<int, int>, char>>, greater<pair<pair<int, int>, char>>> pq;
+    for (int i = 0; i < n; i++)
+    {
+        time += max(time, v[i].first.first);
+        pq.push({{v[i].first.second, v[i].first.first}, v[i].second});
+        i++;
+        while (i < n && v[i].first.first <= time)
+        {
+            pq.push({{v[i].first.second, v[i].first.first}, v[i].second});
+            i++;
+        }
+        while (!pq.empty())
+        {
+            pair<pair<int, int>, char> temp = pq.top();
+            pq.pop();
+            time += temp.first.first;
+            tim.push_back(time);
+            pro.push_back(temp.second);
+            while (i < n && v[i].first.first <= time)
+            {
+                pq.push({{v[i].first.second, v[i].first.first}, v[i].second});
+                i++;
+            }
+        }
     }
     show2(tim,pro);
     cout<<endl;

@@ -35,7 +35,7 @@ int SJFS(int n,vector<pair<int,int>>&anb)
     {
        
         v[i].first.second=anb[i].first;
-        v[i].first.first=anb[i].second-anb[i].first;
+        v[i].first.first=anb[i].second;
         v[i].second = 'A' + i;
     }
     sort(v.begin(), v.end());
